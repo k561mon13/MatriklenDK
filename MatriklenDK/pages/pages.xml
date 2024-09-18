@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+	<page name="matriklendk.getsfebfe">
+        <url-parameters>
+            <url-parameter name="wkt">
+                if isDefined(wkt) then wkt
+                else "" endif
+            </url-parameter>
+        </url-parameters>
+
+        <data handler="datasource" operation="execute-command">
+            <url-parameters>
+                <url-parameter name="datasource" value="matriklendk"/>
+                <url-parameter name="command" value="get-sfe-bfe"/>
+            </url-parameters>
+        </data>
+    </page>
+</pages>

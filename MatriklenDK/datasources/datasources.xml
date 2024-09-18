@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+
+    <endpoint endpointtype="mssql" name="ep_matriklendk">
+        <connect></connect>
+        <user></user>
+        <pwd></pwd>
+    </endpoint>
+
+    <datasource displayname="MatriklenDK" endpoint="ep_matriklendk" name="matriklendk">
+        <sql command="get-sfe-bfe">
+			select top 1 samletFastEjendomLokalId SFE,id_lokalId jordstykke from KORT.MATRIKEL_JORDSTYKKE_GAELDENDE where SHAPE.STContains(geometry::STGeomFromText([string: wkt],25832))=1 
+        </sql>
+        <table name="KORT.MATRIKEL_JORDSTYKKE_GAELDENDE"/>
+    </datasource>
+</datasources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy>
+     
+    <version>4.2.1</version>          <!-- The version of SpatialMap this module comes from -->
+    <lastupdated>4.2.1</lastupdated>  <!-- The SpatialMap version this module was last updated -->
+    <since>4.2.1</since>               <!-- The SpatialMap version this module was introduced in -->
+    <description>Klik i kortet og bliv sendt til Matriklen.DK</description>       <!-- Short description of this module (shown in the admin console) -->
+	<copydir fromdir="[module:MatriklenDK.dir]/js" todir="[cbinfo.wwwroot.dir]/modules/MatriklenDK/js" replacetext="true" />
+</deploy>

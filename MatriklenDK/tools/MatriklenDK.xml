@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool>
+    <clients>portal, mobile</clients>
+    <requires>
+		<file type="script" name="[cbinfo.js.url]/standard/mapclick.js" lazy="true" priority="1" charset="utf-8" />
+        <file type="script" name="[cbinfo.js.url]/standard/overlaywindow.js" lazy="true" priority="1" charset="utf-8" />
+        <file type="script" name="/modules/MatriklenDK/js/MatriklenDK_tool.js" lazy="true" priority="1" charset="utf-8" />
+		<component name="MatriklenDK" clients="mobile" />
+    </requires>
+    <cbinfo-metadata>
+        <param name="tool.help.text">Matriklen.DK</param>
+    </cbinfo-metadata>
+    <displayname>Matriklen.dk</displayname>
+    <description>Klik i kortet og bliv sendt til Matriklen.DK</description>
+  
+	<onclick>MatriklenDK.init()</onclick>
+</tool>
